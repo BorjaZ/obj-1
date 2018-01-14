@@ -1,0 +1,78 @@
+# I. CARACTERIZACIÓN DE LOS RECURSOS Y USOS DE SUELO MEDIANTE EL USO DEL CATASTRO DE CONAF.
+# USO DE SOFTWARE QGIS 2.8.6-Wien
+
+# Los años disponibles para la Región de Los Ríos y la Región de La Araucanía del Catastro Nacional de Recursos Vegetacionales
+# de CONAF, son los años 1997, 2007/2008, 2013 y 2017. 
+
+# [1997]
+# La Araucanía 1997
+# Los Ríos 1997
+
+# [2007]
+# La Araucanía 2007
+# Los Ríos 2006
+
+# [2013/2014]
+# La Araucanía 2014
+# Los Ríos 2014
+
+# [2017]
+# La Araucanía 2017
+# Los Ríos 2017
+
+# Así, de 1997 a 2007 son 10 años de diferencia, de 2007 a 2013 son 6, de 2013 a 2017 son 4. La media de años entre Catástros
+# es de 6,7 años. 
+
+# [1 Usos de suelo]
+# Sub-usos (reclasificados)
+
+# [1.1 Bosques]
+# Tipos de bosque (B. nativo - B. mixto - Plantación)
+# Tipos Forestales
+# Especies Dominantes (hasta 5-7 especies)
+
+# [1.1.1 Bosque nativo]
+# Estructura del B. Nativo (Adulto - Adulto/Renoval - Renoval)
+# Densidad del B. Nativo (Abierto - Semidenso - Denso)
+
+# [Métricas de cada año]
+# Densidad de parches - Fragmentación - Relación área perímetro - etc
+
+--------------------------------------------------------------------------------------
+
+# EJEMPLO 1997
+
+# FOLDERS:
+# [1997] folder: /home/carlos/Documentos/tesis/catastros/1997/
+# [LA ARAUCANÍA 1997] - folder: /home/carlos/Documentos/tesis/catastros/1997/araucanía1997/
+# [LOS RIOS 1997] - folder: /home/carlos/Documentos/tesis/catastros/1997/loslagos-losrios1997/
+
+# PASOS:
+
+# a) ABRIR ARCHIVO .shp, en el caso de La Araucanía "CBN_09REG_1997.shp".
+
+# b) CAMBIAR PROYECCIÓN: hacer click derecho en la capa .shp en la sección "Capas" (sector inferior derecho) y seleccionar
+# "Propiedades". Luego en la sección "Generales" cambiar el "Sistema de referencia de coordenadas" por el sistema de 
+# referencia de coordenadas "WGS 84/UTM zone 18S" ID "EPSG:32718".
+
+# c) SELECCIONAR COMUNAS DE ESTUDIO. # se requiere limpiar información irrelevante para el estudio, para esto seleccionaré
+# sólo las comunas que se incluyen en el área de estudio. Éstas son: a) en La Araucanía: Villarrica, Curarrehue, Pucón, y 
+# b) en Los Ríos: Panguipulli, Los Lagos, Lago Ranco, Futrono.
+
+# La expresión es la siguiente para La Araucanía: 
+# (Notar el caso de Pucón, donde en algún traspaso de base de datos no se reconoció el tilde y perdió su nombre original,
+# quedando en "Pucn". Por esto es importante siempre revisar las bases de datos). 
+
+"COMUNA" LIKE '%Curarrehue%' OR "COMUNA" LIKE '%Pucn%' OR "COMUNA" LIKE '%Villarrica%' 
+
+# Luego de seleccionar, presionamos en 
+
+# Y para Los Ríos:
+
+“Nom_com” LIKE ‘Panguipulli’ OR “Nom_com” LIKE ‘Los Lagos’ OR “Nom_com” LIKE ‘Lago Ranco’ OR “Nom_com” LIKE
+‘Futrono’
+
+# **MUY IMPORTANTE**, en algunos años los campos de valores también tienen 
+
+# Para esto usaré la herramienta "Selección por expresión" en la Tabla de Atributos del archivo shape. Primero, se 
+
