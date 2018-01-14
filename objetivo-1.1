@@ -49,30 +49,41 @@
 
 # PASOS:
 
-# a) ABRIR ARCHIVO .shp, en el caso de La Araucanía "CBN_09REG_1997.shp".
+# A) ABRIR ARCHIVO .shp, en el caso de La Araucanía "CBN_09REG_1997.shp".
 
-# b) CAMBIAR PROYECCIÓN: hacer click derecho en la capa .shp en la sección "Capas" (sector inferior derecho) y seleccionar
+# B) CAMBIAR PROYECCIÓN: hacer click derecho en la capa .shp en la sección "Capas" (sector inferior derecho) y seleccionar
 # "Propiedades". Luego en la sección "Generales" cambiar el "Sistema de referencia de coordenadas" por el sistema de 
 # referencia de coordenadas "WGS 84/UTM zone 18S" ID "EPSG:32718".
 
-# c) SELECCIONAR COMUNAS DE ESTUDIO. # se requiere limpiar información irrelevante para el estudio, para esto seleccionaré
-# sólo las comunas que se incluyen en el área de estudio. Éstas son: a) en La Araucanía: Villarrica, Curarrehue, Pucón, y 
-# b) en Los Ríos: Panguipulli, Los Lagos, Lago Ranco, Futrono.
+# C) SELECCIONAR COMUNAS DE ESTUDIO. # se requiere limpiar información irrelevante para el estudio, para esto seleccionaré
+# sólo las comunas que se incluyen en el área de estudio. Éstas son: i) en La Araucanía: Villarrica, Curarrehue, Pucón, y 
+# ii) en Los Ríos: Panguipulli, Los Lagos, Lago Ranco, Futrono. La forma más intuitiva es desde la Tabla de Atributos,
+# donde en la barra inferior uno de los íconos corresponderá a "Seleccion por Expresión", luego introducimos la expresión 
+# adecuada para cada caso, la cual seleccionará sólo las comunas que necesitamos.
 
-# La expresión es la siguiente para La Araucanía: 
-# (Notar el caso de Pucón, donde en algún traspaso de base de datos no se reconoció el tilde y perdió su nombre original,
-# quedando en "Pucn". Por esto es importante siempre revisar las bases de datos). 
+# La expresión es la siguiente para La Araucanía:  
 
 "COMUNA" LIKE '%Curarrehue%' OR "COMUNA" LIKE '%Pucn%' OR "COMUNA" LIKE '%Villarrica%' 
+# (Notar el caso de Pucón, donde en algún traspaso de base de datos no se reconoció el tilde y perdió su nombre original,
+# quedando en "Pucn". Por esto es importante siempre revisar las bases de datos).
 
-# Luego de seleccionar, presionamos en 
+# Luego de seleccionar, nos vamos a la ventana principal y nos verificamos que el área que necesitamos esté seleccionada 
+# (en mi caso el área aparece de color amarillo en la cartografía). Click derecho en la capa (sección capas) y presionamos en
+# "Guardar como".
 
-# Y para Los Ríos:
+# En la ventana emergente preocuparnos de que:
+# i) el Sistema de Proyección sea el adecuado, en mi caso EPSG:32718.
+# ii) esté marcado el cuadro que dice "Guardar sólo los objetos espaciales seleccionados".
+# iii) guardemos en un archivo .shp (SHAPE).
+# iv) le demos un nombre adecuado a nuestra capa, de otro modo será un caos posteriormente.
+
+# ... y para Los Ríos:
 
 “Nom_com” LIKE ‘Panguipulli’ OR “Nom_com” LIKE ‘Los Lagos’ OR “Nom_com” LIKE ‘Lago Ranco’ OR “Nom_com” LIKE
 ‘Futrono’
 
-# **MUY IMPORTANTE**, en algunos años los campos de valores también tienen 
+# **MUY IMPORTANTE**, en algunos años los campos de valores también tienen distintos nombres, tales como "Comunas", 
+# "COM", "nom_com", etc. En ese caso, las expresiones variarán también.
 
 # Para esto usaré la herramienta "Selección por expresión" en la Tabla de Atributos del archivo shape. Primero, se 
 
