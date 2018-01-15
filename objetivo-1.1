@@ -55,7 +55,7 @@
 # "Propiedades". Luego en la sección "Generales" cambiar el "Sistema de referencia de coordenadas" por el sistema de 
 # referencia de coordenadas "WGS 84/UTM zone 18S" ID "EPSG:32718".
 
-# C) SELECCIONAR COMUNAS DE ESTUDIO. # se requiere limpiar información irrelevante para el estudio, para esto seleccionaré
+# C) SELECCIONAR Y GUARDAR SÓLO COMUNAS DE ESTUDIO. # se requiere limpiar información irrelevante para el estudio, para esto seleccionaré
 # sólo las comunas que se incluyen en el área de estudio. Éstas son: i) en La Araucanía: Villarrica, Curarrehue, Pucón, y 
 # ii) en Los Ríos: Panguipulli, Los Lagos, Lago Ranco, Futrono. La forma más intuitiva es desde la Tabla de Atributos,
 # donde en la barra inferior uno de los íconos corresponderá a "Seleccion por Expresión", luego introducimos la expresión 
@@ -77,13 +77,65 @@
 # iii) guardemos en un archivo .shp (SHAPE).
 # iv) le demos un nombre adecuado a nuestra capa, de otro modo será un caos posteriormente.
 
-# ... y para Los Ríos:
+# ... y luego hacer lo mismo para la región de Los Ríos. El código de selección es el siguiente:
 
-“Nom_com” LIKE ‘Panguipulli’ OR “Nom_com” LIKE ‘Los Lagos’ OR “Nom_com” LIKE ‘Lago Ranco’ OR “Nom_com” LIKE
-‘Futrono’
+"COMUNA" LIKE '%Panguipulli%' OR "COMUNA" LIKE '%Los Lagos%' OR "COMUNA" LIKE '%Lago Ranco%'OR "COMUNA" LIKE '%Futrono%' 
 
 # **MUY IMPORTANTE**, en algunos años los campos de valores también tienen distintos nombres, tales como "Comunas", 
 # "COM", "nom_com", etc. En ese caso, las expresiones variarán también.
 
-# Para esto usaré la herramienta "Selección por expresión" en la Tabla de Atributos del archivo shape. Primero, se 
+# Los resultados quedarán guardados en el siguiente folder: /home/carlos/Documentos/tesis/resultados/1997/ con los
+# siguientes nombres: "comunasIX-1997" y "comunasXIV-1997" para La Araucanía y Los Ríos respectivamente.
+
+# D) HOMOLOGAR Y LIMPIAR TABLA DE ATRIBUTOS.
+# Usaremos sólo una parte de la información de la tabla de atributos, por lo cual, la que no sea de nuestro interés la 
+# quitaremos. Luego homologaremos los formatos y nombres de las columnas y la información que contengan, con fin de que
+# al procesar no tengamos problemas como omisión de información u otros.
+
+# Nos quedaremos sólo con los siguientes campos:
+# ID_PEND
+# ID_EXPO
+# ID_ALTI
+# ID_ALTU
+# ID_USO 
+# ID_SUBUSO
+# ID_ESTRUC
+# ID_COBER
+# ID_TIFO
+# ID_STIF
+# ID_COMU
+# ID_ESP1
+# ID_ESP2
+# ID_ESP3
+# ID_ESP4
+# ID_ESP5
+# ID_ESP6
+# PENDIENTE
+# EXPOSICION
+# ALTITUD
+# ALTURA
+# USO_ACTUAL
+# TIPO_FORES
+# SUBTIPOFOR
+# ESPECIE_1
+# ESPECIE_2
+# ESPECIE_3
+# ESPECIE_4
+# ESPECIE_5
+# ESPECIE_6
+# COMUNA
+
+# Para esto nos dirigimos a la Tabla de Atributos, en la esquina superior izquierda, y hacemos sobre el ícono del lápiz que
+# nos da los permisos para editar. Buscamos en el sector derecho de la barra el ícono llamado "Borrar columna" y hacemos click.
+# Seleccionamos lo que queremos borrar y lo borramos. Presionamos nuevamente el lápiz de editar y guardamos los cambios. 
+# Repetimos lo mismo en ambas regiones. 
+
+# Si se requiere modificar los nombres de columnas para que en ambas regiones sean iguales, dirigirse a esta dirección 
+# dentro de la Toolbox (caja de herramientas) -> QGIS geoalgorithms -> Vector table tools -> refactor fields 
+
+# Ahora uniremos las capas y tablas de atributos una vez homologadas y limpiada la información que no usaremos. Para esto,
+# nos dirigiremos dentro del Toolbox a: GRASS GIS 7 Commands → v.patch → unir capas y su tabla de atributos → en archivo “catastro_allcomunas”
+#
+
+
 
