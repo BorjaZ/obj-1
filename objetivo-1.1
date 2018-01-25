@@ -203,6 +203,88 @@ NOM_REG
 NOM_PROV
 NOM_COM
 
+**  "ID_USO" LIKE '08' AND "ID_SUBUSO" LIKE '01'
+
+
+TABLA DE USOS PRESENTES EN LAS CARTOGRAFIAS DE CONAF PARA EL AE
+1. Areas urbanas e industriales
+2. Terrenos agricolas
+3. Praderas y matorrales
+4. Bosques
+5. Humedales
+6. Areas sin vegetacion
+7. Nieves y glaciares
+8. Cuerpos de agua
+9. Sin cobertura aerofotografica
+
+TABLA DE SUBUSOS PRESENTES EN LAS CARTOGRAFIAS DE CONAF PARA EL AE
+1.1. Ciudades-pueblos-Z.I.
+1.2. Mineria industrial
+
+2.1. Terrenos de uso agricola
+2.2. Rotacion cultivo-pradera
+
+3.1. Praderas
+3.2. Matorral-pradera
+3.3. Matorral
+3.4. Matorral arborescente
+
+4.1. Plantaciones
+4.2. Bosque nativo
+4.3. Bosque mixto
+
+5.1. Vegetacion herbacea en orilla
+5.3. Ñadis herbaceos y arbustivos
+5.6. Vegas
+5.7. Otros terrenos humedos
+
+6.1. Playas y dunas
+6.2. Afloramientos rocosos
+6.3. Areas sobre limite vegetacion
+6.4. Corridas de lava y escoriales
+6.5. Derrumbes sin vegetacion
+6.7. Otros terrenos sin vegetacion
+6.8. Cajas de rios
+
+7.1. Nieves
+7.2. Glaciares
+
+8.2. Rios
+8.3. Lago-laguna-embalse-tranque
+
+9.2. Sin cobertura aerofotografica
+
+
+* SE CORREGIRÁN Y HOMOLOGARÁN LOS NOMBRES SEGÚN LO QUE SALE ESCRITO ACÁ
+* IMPORTANTE ESCRIBIR TAL CUAL, SIN MAYÚSCULAS NI TILDES
+
+____________________________________________________________
+
+# PARA ANALIZAR LOS CAMBIOS DE USO DE SUELO:
+
+# 1) Singlepart to multipart: agrupa todos los parches en un sólo parche de cada valor (aunque estén separados 
+# espacialmente), y luego los agrupa. Esto nos da la posibilidad de calcular el área total de cada uso, subuso, etcétera. 
+# GEOALGORITMOS DE QGIS -> Herramientas de geometría vectorial ->  Singlepart to multipart
+
+#*HACER LO MISMO CON TODAS LAS CAPAS DE AÑOS (ej: uso-1997 y uso-2014), guardar los archivos y luego calcular las áreas:
+
+# Calculadora de campos -> Nuevo -> AREA_HA -> números reales, extensión 15 y precisión 2. Luego aplicar la fórmula de:
+# $area/10000 (esto convierte a hectáreas)
+
+# *** Noté algo muy importante: el multiparte simplifica todos los demás valores, quedando inutilizables, por ejemplo:
+# las comunas se generalizaron y ya no sirven. Qué hacer para esto?  
+UNA VEZ LISTO SE HACE LA MATRIZ
+
+# SIGUIENTE PASO: EXPORTAR A CSV 
+Save vector layer as.. Comma Separated Values (CSV) 
+Nombres: "uso-mpart-(año).csv, y se guardará en la carpeta de cada año (1997 y 2014) 
+
+AHORA SE ANALIZARÁN LOS CAMBIOS ESTADÍSTICAMENTE MEDIANTE PYTHON USANDO JUPYTER ANACONDA, SEGÚN LAS INSTRUCCIONES DE
+GIDAHATARI: https://www.youtube.com/watch?v=U1FW8Bz3YEE&t=953s
+SU PAGINA DE GITHUB: https://github.com/SaulMontoya/Tutorial-de-Analisis-de-Cambio-de-Uso-de-Suelo-con-QGIS-y-Python
+
+
+
 
 
 
