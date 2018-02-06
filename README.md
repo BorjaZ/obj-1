@@ -1,1 +1,27 @@
-methods
+TITULO
+
+RESUMEN
+
+Palabras clave
+
+1. ANTECEDENTES
+
+2. HIPOTESIS Y OBJETIVOS
+
+Hipotesis
+
+Objetivo general
+
+Objetivos especificos
+
+3. METODOLOGIA
+
+4. RESULTADOS PREVIOS
+
+5. RESULTADOS ESPERADOS
+
+6. CRONOGRAMA
+
+7. PRESUPUESTO
+
+8. REFERENCIAS
