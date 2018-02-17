@@ -1,0 +1,138 @@
+6. METODOLOGIA.
+
+OE1.
+- I
+- II
+- III
+OE2.
+- I
+OE3.
+- I
+XX
+-INDICES CONSERVACION/DEGRADACION
+
+OE1.
+
+La escala temporal definida para este análisis (cuál parte del análisis?) es de dos décadas, abarcando desde el anho 1998 a 2018. (debido a..). 
+Para aquello se utilizará información oficial proporcionada por organismos nacionales. Debido a la menor o mayor disponibilidad
+de información se variará en la resolución temporal del estudio en cuanto a muestras utilizadas para analizar las dinámicas
+del territorio. 
+
+I. 
+
+# (RE.1.1.)- Dinámica de usos del suelo del paisaje en las últimas décadas. Uso de suelo en general, usos silvoagropecuarios, usos forestales, variación de la estructura y cobertura de los BN y BM.
+
+Como información espacial base para caracterizar y analizar los usos de suelo en el territorio se utilizará la información
+del Catastro Nacional de Vegetacionales de CONAF, basado en la metodología de la Carta de Ocupación de Tierras 
+desarrollado por el Centro de Estudios Fitosociológicos y Ecológicos L. Emberger, CEPE de Montpellier (Etienne y Prado 1982)
+(ver Anexo XX). Las dinámicas en el paisaje serán analizadas utilizando 3-4 muestras de esta información (t0, t1, t2, t3).
+Los anhos utilizados para cada región y período se presentan en la Tabla 1, así como los atributos (variables) que serán utilizados.
+Para sistematizar esta información debido a mencionadas inconsistencias (informe mauro y zamorano) se utilizará el criterio 
+presentado en el Anexo XX. Se enfatizará en los usos de suelo forestales al analizar estructura, cobertura y composición de especies.
+
+Tabla 1.
+Anhos
+# [1997]             .  [2007]           .[2013/2014]       .[2017]
+# La Araucanía 1997  . La Araucanía 2007 .La Araucanía 2014 .La Araucanía 2017
+# Los Ríos 1997      .  Los Ríos 2006    .Los Ríos 2014     .Los Ríos 2017
+Variables/Atributos
+Uso, Sub-uso, Estructura, Cobertura, Tipos Forestales, Especies Dominantes. 
+
+-Análisis de cambios (de usos). Matrices de cambio y mapas. Mediante matrices, mapas y -otras técnicas- se analizarán los cambios de uso de suelo en el -área de estudio- el análisis de cambio iniciará desde un punto de vista general con todos los cambios de uso de suelo en el paisaje, y luego profundizará en los recursos forestales, concluyendo con los bosques nativos más detalladamente.
+-Métricas espaciales de los recursos forestales del área de estudio. Se usarán porque potencialmente podremos identificar zonas con mayor fragmentación, y por ende mayor riesgo. Habrá que averiguar más sobre éste tópico.
+
+II.
+# (RE.1.2.)- Dinámica socio-económica de los habitantes del paisaje en las últimas décadas. Demografía (tamano, sexo, edad, natalidad), Residencia (urbana-rural), Ingresos (deciles?), 
+
+Se determinarán y ubicarán las características socio-económicas y culturales de la población que habita el área utilizando los
+datos del CENSO de Población y vivienda (t0,t1,t2) y los datos de las encuestas CASEN (t0,t1,t2,t3)(hacer una figura de los t). 
+Los anhos de cada fuente de información, y los atributos y variables a utilizar se presentan en la Tabla II.
+
+Tabla 2. 
+# Socio-economicos: Lugar de residencia (rural-urbano), Demográficas (cantidad de personas), Ingresos (medios), Edad de la población, Género del Jefe de hogar (%),   
+# T0, T1, T2 .... CASEN / CENSO  
+
+Se rasterizará .... se usarán influencias.... (buscar metodos)
+
+III. Culturales
+(RE.1.3.)- Dinámica cultural de los habitantes del paisaje en las últimas décadas. Etnia (indígena, no-indígena), Religión (cristiana, mapuche, otro), Nivel de educación (ninguno, básica, media, superior).
+
+XX. INDICES DE CONSERVACION/DEGRADACION
+# V. Índices de (degradación) del paisaje forestal.
+Asignar y representar categorías de degradación de bosques mediante las características bio-físicas de ellos mismos,
+y de los factores topográficos y ambientales del área.
+
+# Se creará un índice que refleje el estado de los recursos forestales del paisaje mediante la inclusión del uso actual (2017),
+# la identificación de zonas de mayor variabilidad (mayores cambios), las métricas de paisaje, y otras variables biofísicas.
+
+
+
+
+
+_____________________________________________________________________________________________________
+# II. CARACTERIZACIÓN DE OTRAS VARIABLES BIOFÍSICAS.
+
+# II. Caracterización de variables bio-físicas de otras fuentes (e.j. precipitaciones, capacidad de uso, erosividad, etc)
+
+# Estas variables debiesen corresponder a su mayoría a variables en las que no son muy importantes las fluctuaciones 
+# a una escala de tiempo de décadas. Por ejemplo, la capacidad de uso, la precipitación media anual, la erosividad,
+# etc, no son variables en las cuales se debiesen aplicar distintos criterios para cada imágen.
+
+# Por lo tanto, será una caracterización por cada variable (no por año) que posteriormente será usada para crear un índice. 
+# Problablemente las que no sean necesarias para el índice se podrían omitir, aunque analizar todas de primer momento es interesante.
+
+_____________________________________________________________
+
+3.2. DISEÑO EXPERIMENTAL
+
+3.3. MÉTODOS DE TERRENO ¿?
+
+3.4. ANÁLISIS DE DATOS
+
+
+
+ANEXOS
+
+___________________________________
+
+
+De 1997 a 2007 son 10 años de diferencia, de 2007 a 2013 son 6, de 2013 a 2017 son 4. La media de años entre Catástros es de 6,7 años. 
+
+_____________________________________
+
+# [1 Usos de suelo]
+# Sub-usos (reclasificados)
+
+# [1.1 Bosques]
+# Tipos de bosque (B. nativo - B. mixto - Plantación)
+# Tipos Forestales
+# Especies Dominantes (hasta 5-7 especies)
+
+# [1.1.1 Bosque nativo]
+# Estructura del B. Nativo (Adulto - Adulto/Renoval - Renoval)
+# Densidad del B. Nativo (Abierto - Semidenso - Denso)
+
+# [Métricas de cada año]
+# Densidad de parches - Fragmentación - Relación área perímetro - etc 
+
+______________________________________
+
+Papers utiles:
+
+Uncovering Ecosystem Service Bundles through Social Preferences
+    Berta Martín-López, 
+    Irene Iniesta-Arandia,  
+
+Caracterizacion de pob. musulmana: http://www.eaber.org/system/tdf/documents/NCAER_Shariff_2006.pdf?file=1&type=node&id=22136&force=
+
+REDD adoption: https://www.sciencedirect.com/science/article/pii/S1389934117301259
+    
+Adoption of conservation practices in agriculture: Econometric Analysis of the Factors that Affect Adoption of
+Conservation Farming Practices by Smallholder Farmers in Zambia
+
+___________________________________________
+
+Si el estado de degradacion finalmente se incluye en este objetivo se podria estructurar de esta forma:
+I. USOS DE SUELO
+II. SOCIO-ECONOMICO Y CULTURAL (JUNTARLOS YA QUE TIENEN METODO MUY SIMILAR)
+III. CONSERVACION/DEGRADACION
