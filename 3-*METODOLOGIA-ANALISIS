@@ -39,6 +39,18 @@ Variables/Atributos
 Uso, Sub-uso, Estructura, Cobertura, Tipos Forestales, Especies Dominantes. 
 
 -Análisis de cambios (de usos). Matrices de cambio y mapas. Mediante matrices, mapas y -otras técnicas- se analizarán los cambios de uso de suelo en el -área de estudio- el análisis de cambio iniciará desde un punto de vista general con todos los cambios de uso de suelo en el paisaje, y luego profundizará en los recursos forestales, concluyendo con los bosques nativos más detalladamente.
+
+Para modelar el cambio de uso del suelo de manera estadística-espacial entre t0 y tx se utilizará la metodología mencionada por 
+Sandoval y Real (2005) utilizando el software QGIS para el cálculo de superficies y manipulación de información geográfica en 
+general, y XXXX para ...                                . Los vectores de cambio y las matrices para el balance de superficie
+a utilizar se presentan en el Anexo XX. En primera instancia se identificarán los cambios para todos los usos y sub-usos de suelo (1).
+Luego se utilizará una re-clasificación (adaptación) (Anexo II) enfocada en los cambios entre los usos forestales y los de mayor relevancia (2) 
+(según las cuantificaciones del método anterior (1)) utilizando como Clases de Uso/Unidad Homogenea del Terreno las variables
+de estructura y cobertura (Tabla 1) de forma separada. Se utilizará el mismo procedimiento para analizar las especies forestales
+dominantes en los usos Bosque, y finalmente, los Tipos Forestales para los bosques nativos. Gráficas y test estadísticos 
+serán realizados utilizando software RStudio y Jupyter-Anaconda.
+
+Se calcularán métricas del paisaje .... XX ... para identificar zonas de mayor efecto borde, fragmentación de BN, ....
 -Métricas espaciales de los recursos forestales del área de estudio. Se usarán porque potencialmente podremos identificar zonas con mayor fragmentación, y por ende mayor riesgo. Habrá que averiguar más sobre éste tópico.
 
 II.
