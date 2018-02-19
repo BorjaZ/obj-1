@@ -13,22 +13,25 @@ XX
 
 OE1.
 
-La escala temporal definida para este análisis (cuál parte del análisis?) es de dos décadas, abarcando desde el anho 1998 a 2018. (debido a..). 
-Para aquello se utilizará información oficial proporcionada por organismos nacionales. Debido a la menor o mayor disponibilidad
-de información se variará en la resolución temporal del estudio en cuanto a muestras utilizadas para analizar las dinámicas
-del territorio. 
+La escala temporal definida para -lograr el OE1- es de dos décadas, abarcando desde el anho 1998 a 2018. (debido a..). 
+Se utilizará información oficial pública proporcionada por organismos nacionales a objetivo de facilitar la replicabilidad del 
+procedimiento. Una limitación de aquello es que la resolución (número de muestras/bases de datos) variará en función de la
+cantidad y calidad de información disponible. Para analizar las dinámicas del territorio en cuanto a usos de suelo, se utilizará
+como información espacial base la información del Catastro Nacional de Vegetación de CONAF (ver Anexo XX)(PAG SIT). Por otra 
+parte, para determinar y ubicar las características socio-económicas y culturales de la población que habita el área se
+utilizarán los datos del CENSO de Población y vivienda (Censo)(PAG) y los datos de las encuestas CASEN (PAG). La principal 
+metodología de cada fuente de información se resume en el Anexo XX. Las variables que se utilizarán de cada fuente
+de información se declaran en la Tabla X. Para un procesamiento adecuado se sistematizará y compilará la información de acuerdo
+a lo informado en el Anexo XX. 
 
 I. 
+# (RE11)- Dinámica de usos del suelo del paisaje en las últimas décadas. Uso de suelo en general, usos silvoagropecuarios, usos forestales, variación de la estructura y cobertura de los BN y BM.
 
-# (RE.1.1.)- Dinámica de usos del suelo del paisaje en las últimas décadas. Uso de suelo en general, usos silvoagropecuarios, usos forestales, variación de la estructura y cobertura de los BN y BM.
+para caracterizar y analizar los usos de suelo en el territorio se utilizará 
 
-Como información espacial base para caracterizar y analizar los usos de suelo en el territorio se utilizará la información
-del Catastro Nacional de Vegetacionales de CONAF, basado en la metodología de la Carta de Ocupación de Tierras 
-desarrollado por el Centro de Estudios Fitosociológicos y Ecológicos L. Emberger, CEPE de Montpellier (Etienne y Prado 1982)
-(ver Anexo XX). Las dinámicas en el paisaje serán analizadas utilizando 3-4 muestras de esta información (t0, t1, t2, t3).
-Los anhos utilizados para cada región y período se presentan en la Tabla 1, así como los atributos (variables) que serán utilizados.
-Para sistematizar esta información debido a mencionadas inconsistencias (informe mauro y zamorano) se utilizará el criterio 
-presentado en el Anexo XX. Se enfatizará en los usos de suelo forestales al analizar estructura, cobertura y composición de especies.
+Las dinámicas en el paisaje (los cambios) serán analizadas en el período entre el anho 1997 hacia el anho 2017. En total
+serán 4 las muestras utilizadas (Tabla 1). Se enfatizará en los usos de suelo forestales al analizar estructura, cobertura y 
+composición de especies.
 
 Tabla 1.
 Anhos
@@ -131,6 +134,10 @@ Papers utiles:
 Uncovering Ecosystem Service Bundles through Social Preferences
     Berta Martín-López, 
     Irene Iniesta-Arandia,  
+
+CATASTRO (1) basado en la metodología de la Carta de Ocupación de Tierras 
+desarrollado por el Centro de Estudios Fitosociológicos y Ecológicos L. Emberger, CEPE de Montpellier (Etienne y Prado 1982)
+
 
 Caracterizacion de pob. musulmana: http://www.eaber.org/system/tdf/documents/NCAER_Shariff_2006.pdf?file=1&type=node&id=22136&force=
 
