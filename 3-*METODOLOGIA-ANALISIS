@@ -13,67 +13,61 @@ XX
 
 OE1.
 
-La escala temporal definida para -lograr el OE1- es de dos décadas, abarcando desde el anho 1998 a 2018. (debido a..). 
+La escala temporal definida para -lograr el OE1- es de dos décadas, abarcando desde el anho 1998 a 2018. (JUSTIFICAR). 
 Se utilizará información oficial pública proporcionada por organismos nacionales a objetivo de facilitar la replicabilidad del 
 procedimiento. Una limitación de aquello es que la resolución (número de muestras/bases de datos) variará en función de la
 cantidad y calidad de información disponible. Para analizar las dinámicas del territorio en cuanto a usos de suelo, se utilizará
-como información espacial base la información del Catastro Nacional de Vegetación de CONAF (ver Anexo XX)(PAG SIT). Por otra 
+como información espacial base la información del Catastro Nacional de Vegetación de CONAF (cita sit). Por otra 
 parte, para determinar y ubicar las características socio-económicas y culturales de la población que habita el área se
-utilizarán los datos del CENSO de Población y vivienda (Censo)(PAG) y los datos de las encuestas CASEN (PAG). La principal 
-metodología de cada fuente de información se resume en el Anexo XX. Las variables que se utilizarán de cada fuente
-de información se declaran en la Tabla X. Para un procesamiento adecuado se sistematizará y compilará la información de acuerdo
-a lo informado en el Anexo XX. 
+utilizarán los datos del CENSO de Población y vivienda (cita censo) y los datos de las encuestas CASEN (cita casen). Las muestras, y
+sus anhos y fuentes de información correspondientes se presentan en la Figura 1; las variables que se utilizarán desde cada fuente
+se declaran en la Tabla 1. La principal metodología de cada fuente de información se resume en el Anexo 1. Para un 
+procesamiento adecuado se sistematizará y compilará la información de acuerdo a lo informado en el Anexo XX. 
 
-I. 
-# (RE11)- Dinámica de usos del suelo del paisaje en las últimas décadas. Uso de suelo en general, usos silvoagropecuarios, usos forestales, variación de la estructura y cobertura de los BN y BM.
+- cita: pag del sit + cita del sit
+- cita: pag del censo + cita del censo
+- cita: pag de casen + cita de casen
+- Figura 1: linea temporal que represente los anhos de cada fuente de informacion SIT+CENSO+CASEN.
+- Tabla 1: Variables que se utilizarán para el OE1
+- Anexo 1: metodologías, páginas, de cada fuente de informacion.
+- Anexo 2: modelo de tabla para catastro, censo, casen.
 
-para caracterizar y analizar los usos de suelo en el territorio se utilizará 
+OE11. 
 
-Las dinámicas en el paisaje (los cambios) serán analizadas en el período entre el anho 1997 hacia el anho 2017. En total
-serán 4 las muestras utilizadas (Tabla 1). Se enfatizará en los usos de suelo forestales al analizar estructura, cobertura y 
-composición de especies.
+Para analizar las dinámicas de las coberturas de usos de suelo y vegetación en el paisaje se utilizarán 4 muestras en total, 
+entre el anho 1997 hacia el anho 2017 (ver Figura 1). - Se enfatizará en los usos forestales al analizar estructura,
+cobertura y composición de especies-. Para modelar el cambio de uso del suelo de manera estadística-espacial se aplicará la 
+metodología mencionada por Sandoval y Real (2005), utilizando el software QGIS (cita qgis) para cálcular superficies y manipular 
+información geográfica en general (, y XXXX para ...). Los vectores de cambio y las matrices para el balance de superficie 
+a utilizar se presentan en el Anexo 3. 
 
-Tabla 1.
-Anhos
-# [1997]             .  [2007]           .[2013/2014]       .[2017]
-# La Araucanía 1997  . La Araucanía 2007 .La Araucanía 2014 .La Araucanía 2017
-# Los Ríos 1997      .  Los Ríos 2006    .Los Ríos 2014     .Los Ríos 2017
-Variables/Atributos
-Uso, Sub-uso, Estructura, Cobertura, Tipos Forestales, Especies Dominantes. 
-
--Análisis de cambios (de usos). Matrices de cambio y mapas. Mediante matrices, mapas y -otras técnicas- se analizarán los cambios de uso de suelo en el -área de estudio- el análisis de cambio iniciará desde un punto de vista general con todos los cambios de uso de suelo en el paisaje, y luego profundizará en los recursos forestales, concluyendo con los bosques nativos más detalladamente.
-
-Para modelar el cambio de uso del suelo de manera estadística-espacial entre t0 y tx se utilizará la metodología mencionada por 
-Sandoval y Real (2005) utilizando el software QGIS para el cálculo de superficies y manipulación de información geográfica en 
-general, y XXXX para ...                                . Los vectores de cambio y las matrices para el balance de superficie
-a utilizar se presentan en el Anexo XX. En primera instancia se identificarán los cambios para todos los usos y sub-usos de suelo (1).
-Luego se utilizará una re-clasificación (adaptación) (Anexo II) enfocada en los cambios entre los usos forestales y los de mayor relevancia (2) 
-(según las cuantificaciones del método anterior (1)) utilizando como Clases de Uso/Unidad Homogenea del Terreno las variables
-de estructura y cobertura (Tabla 1) de forma separada. Se utilizará el mismo procedimiento para analizar las especies forestales
-dominantes en los usos Bosque, y finalmente, los Tipos Forestales para los bosques nativos. Gráficas y test estadísticos 
-serán realizados utilizando software RStudio y Jupyter-Anaconda.
+En primera instancia se identificarán los cambios para todos los usos y sub-usos de suelo (1). Luego se utilizará una 
+re-clasificación (adaptación) (Anexo 4) enfocada en los cambios entre los usos forestales y los de mayor relevancia (2) 
+(según las cuantificaciones del método anterior (1)) utilizando como Unidades Homogéneas de Terreno las variables
+de estructura y cobertura (Tabla 1/Anexo 4) de forma separada. Se procederá de la misma manera al analizar la composición
+de especies forestales dominantes en los usos forestales, y finalmente, los Tipos Forestales para los bosques nativos.
+Gráficas y test estadísticos serán realizados utilizando software RStudio (cita de R) y Jupyter-Anaconda (cita de Jupyter).
 
 Se calcularán métricas del paisaje .... XX ... para identificar zonas de mayor efecto borde, fragmentación de BN, ....
 -Métricas espaciales de los recursos forestales del área de estudio. Se usarán porque potencialmente podremos identificar zonas con mayor fragmentación, y por ende mayor riesgo. Habrá que averiguar más sobre éste tópico.
 
-II.
-# (RE.1.2.)- Dinámica socio-económica de los habitantes del paisaje en las últimas décadas. Demografía (tamano, sexo, edad, natalidad), Residencia (urbana-rural), Ingresos (deciles?), 
+- cita: QGIS
+- Anexo 3: Figura utilizada por Sandoval y Real (2005) para explicar el modelamiento.
+- Anexo 4: Adaptación de los usos para analizar sólo usos silvoagropecuarios/vegetacion.
+- cita R.
+- cita Jupyter
+
+OE12.
 
 Se determinarán y ubicarán las características socio-económicas y culturales de la población que habita el área utilizando los
-datos del CENSO de Población y vivienda (t0,t1,t2) y los datos de las encuestas CASEN (t0,t1,t2,t3)(hacer una figura de los t). 
-Los anhos de cada fuente de información, y los atributos y variables a utilizar se presentan en la Tabla II.
+datos del CENSO y encuestas CASEN entre.... (ver anhos respectivos en línea temporal en Fig. 1). 
 
-Tabla 2. 
-# Socio-economicos: Lugar de residencia (rural-urbano), Demográficas (cantidad de personas), Ingresos (medios), Edad de la población, Género del Jefe de hogar (%),   
-# T0, T1, T2 .... CASEN / CENSO  
+Se rasterizará .... se usarán influencias.... (BUSCAR METODOS) luego de determinar y ubicar cómo analizar la DINAMICA.
 
-Se rasterizará .... se usarán influencias.... (buscar metodos)
+OE13. INDICES DE CONSERVACION/DEGRADACION
 
-III. Culturales
-(RE.1.3.)- Dinámica cultural de los habitantes del paisaje en las últimas décadas. Etnia (indígena, no-indígena), Religión (cristiana, mapuche, otro), Nivel de educación (ninguno, básica, media, superior).
-
-XX. INDICES DE CONSERVACION/DEGRADACION
 # V. Índices de (degradación) del paisaje forestal.
+
 Asignar y representar categorías de degradación de bosques mediante las características bio-físicas de ellos mismos,
 y de los factores topográficos y ambientales del área.
 
@@ -93,7 +87,16 @@ ________________________________________________________________________________
 # Por lo tanto, será una caracterización por cada variable (no por año) que posteriormente será usada para crear un índice. 
 # Problablemente las que no sean necesarias para el índice se podrían omitir, aunque analizar todas de primer momento es interesante.
 
-_____________________________________________________________
+____________________________________________________________
+
+OE2
+OE21
+
+OE3 
+OE31
+
+
+
 
 3.2. DISEÑO EXPERIMENTAL
 
@@ -104,6 +107,22 @@ _____________________________________________________________
 
 
 ANEXOS
+
+_________________________________________________
+
+Figura 1.
+Anhos
+# [1997]             .  [2007]           .[2013/2014]       .[2017]
+# La Araucanía 1997  . La Araucanía 2007 .La Araucanía 2014 .La Araucanía 2017
+# Los Ríos 1997      .  Los Ríos 2006    .Los Ríos 2014     .Los Ríos 2017
+
+Tabla 1.
+
+Variables/Atributos
+Uso, Sub-uso, Estructura, Cobertura, Tipos Forestales, Especies Dominantes. 
+Socio-economicos: Lugar de residencia (rural-urbano), Demográficas (cantidad de personas), 
+Ingresos (medios), Edad de la población, Género del Jefe de hogar (%), 
+Culturales: Etnia (indígena, no-indígena), Religión (cristiana, mapuche, otro), Nivel de educación (ninguno, básica, media, superior).
 
 ___________________________________
 
@@ -137,7 +156,6 @@ Uncovering Ecosystem Service Bundles through Social Preferences
 
 CATASTRO (1) basado en la metodología de la Carta de Ocupación de Tierras 
 desarrollado por el Centro de Estudios Fitosociológicos y Ecológicos L. Emberger, CEPE de Montpellier (Etienne y Prado 1982)
-
 
 Caracterizacion de pob. musulmana: http://www.eaber.org/system/tdf/documents/NCAER_Shariff_2006.pdf?file=1&type=node&id=22136&force=
 
