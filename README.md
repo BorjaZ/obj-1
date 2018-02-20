@@ -30,7 +30,20 @@ Objetivos especificos
 
 
 Poner énfasis a:
-- RESULTADOS ESPERADOS, LUEGO METODOLOGIA, LUEGO ANTECEDENTES.
+- RESULTADOS ESPERADOS (casi, pero faltarían correcciones del richi y luego dejarlo bonito)
+- METODOLOGIA
+OE1 
+OE11: casi listo, falta agregar las citas, tablas, anexos.
+OE12: agregar tablas, citas, informacion-variables que se usaran; agregar la fase 2 de esto, que es sacar metricas de puntos y rasterizar para que sea analizable. 
+OE13: falta todo. hay que buscar indices
+
+OE2
+OE21: 
+
+OE3
+OE31:
+
+- ANTECEDENTES.
 
 Por el momento casi listo: 
 - CRONOGRAMA (falta la ultima parte y dejarlo bonito)
