@@ -64,9 +64,9 @@ Sandoval y Real senhalaron en el anho 2005 que "la calidad y el nivel de informa
 desarrollo paralelo a la información geográfica para ser integrada en el análisis y modelamiento espacial de cambios 
 de usos de suelo" al concluir un trabajo realizado en la XIV región de Los Ríos. A la fecha, la mayor resolución 
 espacial de la información disponible es a nivel comunal (ver pag CENSO), y el único CENSO que dispone de información
-georreferenciada es el del anho 2017 (el último)(ver pag CENSO). Dado los antecedentes anteriores, para tener una mejor
-aproximación de la influencia de los factores socio-económicos y culturales localmente se fotointerpretarán las viviendas del
-AE para las imágenes satelitales utilizadas por CONAF en el Catastro de Vegetación (Anexo 5) con el software QGIS.
+georreferenciada es el del anho 2017 (el último)(ver pag CENSO). Dados los antecedentes anteriores, para tener una mejor
+aproximación de la influencia de los factores socio-económicos y culturales localmente, se fotointerpretarán las viviendas del
+AE para las imágenes satelitales utilizadas por CONAF en el Catastro de Vegetación (Anexo 5) usando el software QGIS.
 Se diferenciará entre viviendas urbanas y rurales*. Luego se estimará la cantidad de habitantes del territorio con
 ayuda de los censos de población y encuestas CASEN al extraer el número medio de personas por vivienda por comuna. 
 Esto además permitirá estimar diferenciadamente entre territorios urbanos y rurales. 
@@ -76,8 +76,6 @@ Esta nube de puntos permitirá obtener distintas métricas espaciales, tales com
 de parámetros como la densidad o distancias entre puntos y su configuración en el espacio. 
 - Autocorrelación espacial: los puntos más cercanos tienden a tener valores más cercanos entre sí que los puntos más lejanos. 
 Esto puede cuantificarse y estudiarse con una serie de indices, asi como mediante variogramas y correlogramas
-
-
 
 Se rasterizará .... se usarán influencias.... (BUSCAR METODOS) luego de determinar y ubicar cómo analizar la DINAMICA.
 
@@ -98,33 +96,85 @@ y de los factores topográficos y ambientales del área.
 # Se creará un índice que refleje el estado de los recursos forestales del paisaje mediante la inclusión del uso actual (2017),
 # la identificación de zonas de mayor variabilidad (mayores cambios), las métricas de paisaje, y otras variables biofísicas.
 
-_____________________________________________________________________________________________________
-
-# II. CARACTERIZACIÓN DE OTRAS VARIABLES BIOFÍSICAS.
-
-# II. Caracterización de variables bio-físicas de otras fuentes (e.j. precipitaciones, capacidad de uso, erosividad, etc)
-
-# Estas variables debiesen corresponder a su mayoría a variables en las que no son muy importantes las fluctuaciones 
-# a una escala de tiempo de décadas. Por ejemplo, la capacidad de uso, la precipitación media anual, la erosividad,
-# etc, no son variables en las cuales se debiesen aplicar distintos criterios para cada imágen.
-
-# Por lo tanto, será una caracterización por cada variable (no por año) que posteriormente será usada para crear un índice. 
-# Problablemente las que no sean necesarias para el índice se podrían omitir, aunque analizar todas de primer momento es interesante.
-
 ____________________________________________________________
 
 OE2
-OE21
 
-OE3 
-OE31
+OE21 ANALIZAR
+
+Para analizar y predecir las respuestas de las relaciones entre factores biofísicos y socio-económicos en el estado de (xxx)
+se realizará un -análisis espacial de componentes principales-. 
+
+i) Factores biofísicos
+El orígen de esta información serán las cartografías realizadas por el CIREN (cita CIREN). Dado que éstas ya han sido 
+estudiadas previamente en la zona, se realizarán supuestos en base a aquellos estudios. En la Tabla X se presentan estos 
+indicadores, sus valores, su fuente, el supuesto y el autor que ya estudió con anterioridad su efecto. *Debiesen corresponder
+a variables en que no son importantes fluctuaciones en una década
+
+Tabla X Factores Biofísicos.
+Pp media anual
+Erosividad
+Altitud 
+Pendiente
+Tipo de suelo
+Capacidad de uso
+
+ii) Factores socioeconómicos y culturales
+Se utilizarán los resultados de la caracterización socioeconómica y cultural previa como factores. Además se agregará el regimen 
+de tenencia de tierra (dado que...). Estas variables se declaran en la Tabla X (junto a los de arriba). 
+
+Tabla X Factores socioeconomicos y culturales
+Lugar de residencia (rural-urbano)
+Densidad-Cantidad de personas
+Densidad-Cantidad de viviendas
+Ingresos (medios)
+Edad de la población 
+Género del Jefe de hogar (%), 
+Etnia (indígena, no-indígena)
+Religión (cristiana, mapuche, otro)
+Nivel de educación (ninguno, básica, media, superior).
+
+iii) Estado de degradación
+Variable respuesta? En base a los resultados del análisis anteriormente realizado. Sus valores se declaran en la Tabla X.
+
+OE22 PREDECIR
+
+Predicciones de las dinámicas espaciales en un futuro cercano.
+
+OE2. Permitirá responder preguntas como:
+Cuál/es de los factores analizados han tenido mayor/peor influencia en la degradacion de bosques?
+Cuál/es de los factores analizados se prevé que tendrán mayor/peor influencia en la degradacion de bosques?
+Cuál/es factores se relacionan más directamente con el estado de degradacion? 
+- 
+
+OE31 
+
+Se seleccionarán aleatoriamente 8 iniciativas de conservación en el territorio. 
+(Mostrar un diagrama de flujo) 
+
+- Buscar metodologia de visita.
+
+Una vez obtenidos los resultados XX se visitarán las AP y se realizarán informes técnicos considerando lo obtenido en el 
+trabajo de laboratorio como en terreno. Estos informes serán enviados a los actores clave esperando recibir retroalimentación
+de lo informado. Esto ultimo es a objetivo de obtener mayor antecedentes que en terreno podrían no haber sido considerados.
+
+Una vez realizado el análisis multivariado y las predicciones se realizarán reportes técnicos finales considerando los resultados de laboratorio 
+y las retroalimentaciones de cada AP. Se incluirán tópicos correspondientes a la evaluación sistemática de la conservación 
+(Mostrar diagrama) contrastando entre los resultados mostrados en el análisis de laboratorio y lo reportado por cada AP.
+Se sugerirán alianzas, focos estratégicos y actividades basándose en el análisis holístico realizado para cada una. 
+
+Los resultados obtenidos de este ejercicio serán clave para crear una estrategia basada en la evidencia y en la experienca 
+a nivel de paisaje.
+
+OE32 PLAN DIFUSION
+El plan de difusión del proyecto consiste en (diagrama) ... y más detalladamente se explica en el Anexo X
 
 
 
 
 3.2. DISEÑO EXPERIMENTAL
 
-3.3. MÉTODOS DE TERRENO ¿?
+3.3. MÉTODOS DE TERRENO
 
 3.4. ANÁLISIS DE DATOS
 
@@ -196,9 +246,3 @@ https://link.springer.com/article/10.1023%2FA%3A1016680327755
 
 ENERGY, SPECIES RICHNESS, AND HUMAN POPULATION SIZE: CONSERVATION IMPLICATIONS AT A NATIONAL SCALE
 http://onlinelibrary.wiley.com/doi/10.1890/02-5105/full
-___________________________________________
-
-Si el estado de degradacion finalmente se incluye en este objetivo se podria estructurar de esta forma:
-I. USOS DE SUELO
-II. SOCIO-ECONOMICO Y CULTURAL (JUNTARLOS YA QUE TIENEN METODO MUY SIMILAR)
-III. CONSERVACION/DEGRADACION
