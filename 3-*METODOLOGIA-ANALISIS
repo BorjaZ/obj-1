@@ -19,8 +19,9 @@ procedimiento. Una limitación de aquello es que la resolución (número de mues
 cantidad y calidad de información disponible. Para analizar las dinámicas del territorio en cuanto a usos de suelo, se utilizará
 como información espacial base la información del Catastro Nacional de Vegetación de CONAF (cita sit). Por otra 
 parte, para determinar y ubicar las características socio-económicas y culturales de la población que habita el área se
-utilizarán los datos del CENSO de Población y vivienda (cita censo) y los datos de las encuestas CASEN (cita casen). Las muestras, y
-sus anhos y fuentes de información correspondientes se presentan en la Figura 1; las variables que se utilizarán desde cada fuente
+utilizarán las imágenes LANDSAT/XXX utilizadas por CONAF para el Catastro de Vegetación, y también datos del CENSO de Población
+y vivienda (cita censo) y los datos de las encuestas CASEN (cita casen). Las muestras, y sus anhos y fuentes de información 
+correspondientes se presentan en la Figura 1; las variables que se utilizarán desde cada fuente
 se declaran en la Tabla 1. La principal metodología de cada fuente de información se resume en el Anexo 1. Para un 
 procesamiento adecuado se sistematizará y compilará la información de acuerdo a lo informado en el Anexo XX. 
 
@@ -59,10 +60,33 @@ Se calcularán métricas del paisaje .... XX ... para identificar zonas de mayor
 
 OE12.
 
-Se determinarán y ubicarán las características socio-económicas y culturales de la población que habita el área utilizando los
-datos del CENSO y encuestas CASEN entre.... (ver anhos respectivos en línea temporal en Fig. 1). 
+Sandoval y Real senhalaron en el anho 2005 que "la calidad y el nivel de información socio-económica no ha tenido un 
+desarrollo paralelo a la información geográfica para ser integrada en el análisis y modelamiento espacial de cambios 
+de usos de suelo" al concluir un trabajo realizado en la XIV región de Los Ríos. A la fecha, la mayor resolución 
+espacial de la información disponible es a nivel comunal (ver pag CENSO), y el único CENSO que dispone de información
+georreferenciada es el del anho 2017 (el último)(ver pag CENSO). Dado los antecedentes anteriores, para tener una mejor
+aproximación de la influencia de los factores socio-económicos y culturales localmente se fotointerpretarán las viviendas del
+AE para las imágenes satelitales utilizadas por CONAF en el Catastro de Vegetación (Anexo 5) con el software QGIS.
+Se diferenciará entre viviendas urbanas y rurales*. Luego se estimará la cantidad de habitantes del territorio con
+ayuda de los censos de población y encuestas CASEN al extraer el número medio de personas por vivienda por comuna. 
+Esto además permitirá estimar diferenciadamente entre territorios urbanos y rurales. 
+
+Esta nube de puntos permitirá obtener distintas métricas espaciales, tales como:
+- Análisis de patrones de puntos: permite caracterizar la estructura espacial de un conjunto de puntos en función 
+de parámetros como la densidad o distancias entre puntos y su configuración en el espacio. 
+- Autocorrelación espacial: los puntos más cercanos tienden a tener valores más cercanos entre sí que los puntos más lejanos. 
+Esto puede cuantificarse y estudiarse con una serie de indices, asi como mediante variogramas y correlogramas
+
+
 
 Se rasterizará .... se usarán influencias.... (BUSCAR METODOS) luego de determinar y ubicar cómo analizar la DINAMICA.
+
+- CENSO
+- CENSO página de descarga de info territorial
+- * Ya que me voy a dar esa pega, puedo tomar atributos de las viviendas de alli como: 
+- Anexo 5: Imágenes LANDSAT utilizadas por CONAF (o en su defecto del mismo anho del catastro)
+
+
 
 OE13. INDICES DE CONSERVACION/DEGRADACION
 
