@@ -13,17 +13,18 @@ using the current land cover dataset, historical forest cover maps and documents
 elevation and topography.
 
 Se usaron dos conjuntos de datos de cobertura terrestre en el análisis: el conjunto de datos de cobertura
-terrestre más reciente que se ha obtenido para Chile y un conjunto de datos históricos de cobertura de la tierra.
-El conjunto de datos de cobertura terrestre más reciente es el Mapeo Nacional de los recursos de vegetación nativa 
-(Conaf-Conama-Birf, 1997). Este conjunto de datos consiste en mapas de cobertura terrestre temáticos
-derivado de la interpretación de fotografías aéreas de 1995 y 1996. El conjunto de datos fue producido a escala
-de 1: 50000 con una unidad asignada mínima de 6.25 ha. Un programa intensivo de encuesta de campo por el personal del proyecto apoyado
-la interpretación de la fotografía aérea. Aproximadamente el 61% del bosque nativo se describió en el campo.
-El conjunto de datos históricos de la cobertura del suelo se produjo a una escala de 1: 500000, y proporciona una evaluación de la vegetación
-cubrir antes del asentamiento europeo (Lara et al., in litt). El conjunto de datos fue preparado por medio de interdisciplinarios
-investigación de ingenieros forestales, antropólogos, historiadores y técnicos de sistemas de información geográfica (GIS) #
-utilizando el conjunto de datos actuales de cobertura terrestre, mapas y documentos de cobertura forestal histórica, y extrapolaciones basadas en
-elevación y topografía.
+terrestre más reciente que se ha obtenido para Chile y un conjunto de datos históricos de cobertura de la 
+tierra. El conjunto de datos de cobertura terrestre más reciente es el Mapeo Nacional de los recursos de 
+vegetación nativa (Conaf-Conama-Birf, 1997). Este conjunto de datos consiste en mapas de cobertura terrestre 
+temáticos derivado de la interpretación de fotografías aéreas de 1995 y 1996. El conjunto de datos fue
+producido a escala de 1: 50000 con una unidad asignada mínima de 6.25 ha. Un programa intensivo de encuesta
+de campo por el personal del proyecto apoyado la interpretación de la fotografía aérea. Aproximadamente el
+61% del bosque nativo se describió en el campo. El conjunto de datos históricos de la cobertura del suelo 
+se produjo a una escala de 1: 500000, y proporciona una evaluación de la vegetación cubrir antes del asentamiento
+europeo (Lara et al., in litt). El conjunto de datos fue preparado por medio de interdisciplinarios investigación
+de ingenieros forestales, antropólogos, historiadores y técnicos de sistemas de información geográfica (GIS) 
+utilizando el conjunto de datos actuales de cobertura terrestre, mapas y documentos de cobertura forestal histórica,
+y extrapolaciones basadas en elevación y topografía.
 
 
 2.2.2. Analyse the conversion of native forest 
@@ -45,6 +46,41 @@ from agricultural areas. Violating this assumption is likely to over-estimate th
 conversion to plantations. Intermediate datasets of land cover, if such datasets become available, could be
 used to verify this assumption. 
 
+Se determinó la extensión histórica y actual del bosque nativo. El alcance y la distribución espacial de la
+luego se evaluó la conversión de bosque nativo a plantaciones. Este análisis se realizó utilizando la consulta
+del mapa función en el software ArcView 3.1 GIS (ESRI, Redlands, CA, EE. UU.) en una versión cuadriculada 
+(tamaño de celda de 200 m) del conjuntos de datos de cobertura terrestre. Determinar la distribución espacial 
+previa de un proceso amenazante y usar esto en una evaluación de la vulnerabilidad futura supone que los patrones
+pasados ​​del proceso amenazador son indicativos de patrones futuros Para reducir la posibilidad de violar esta 
+suposición, los conjuntos de datos elegidos para evaluar Los cambios en la cobertura de la tierra deben abarcar
+un período que tenga en cuenta los factores contemporáneos que se cree que están conduciendo los cambios. La 
+conversión del bosque nativo a plantaciones comenzó en la región de estudio en aproximadamente 1974 con el 
+introducción de subsidios para plantaciones y otros incentivos a la silvicultura privada (Ministerio de Agricultura,
+1974, 1979; Lara, 1992). Por lo tanto, aunque se han analizado los cambios en la cobertura del suelo durante un largo
+período, la conversión del bosque nativo a las plantaciones ha ocurrido solo en el pasado reciente. Por lo tanto, 
+hemos asumido que los factores contribuyendo a este tipo de cambios en la cobertura de la tierra todavía operan 
+y predisponen las áreas existentes de bosque nativo a conversión a plantaciones. También hemos asumido que las
+plantaciones se convirtieron de bosque nativo y no de áreas agrícolas Violar esta suposición es probable que 
+sobreestime el impacto del bosque nativo conversión a plantaciones. Los conjuntos de datos intermedios de cobertura 
+del suelo, si dichos conjuntos de datos están disponibles, podrían ser utilizado para verificar esta suposición
+
+a. Se determinó la extensión histórica y actual del bosque nativo
+b. La extensión y distribución espacial de la conversión de bosque nativo a plantaciones fue evaluada. -> se realizo usando la "map query function" en ArcView 3.1 GIS en una version cuadriculada (gridded) (200-m cell size) de los conjuntos de datos de coberturas.
+c. 
+
+Determinar la distribución espacial previa de un proceso amenazante y usar esto en una evaluación de la vulnerabilidad futura
+-supone que los patrones pasados del proceso amenazador son indicativos de patrones futuros-
+Para reducir la posibilidad de violar esta suposición:
+los conjuntos de datos elegidos para evaluar cambios 
+**deben abarcar un período que tenga en cuenta los factores contemporáneos que se cree que están conduciendo los cambios**
+
+
+Entre el periodo de tiempo entre t0 y t1 deben estar presentes los factores contemporaneos que se cree que estan conduciendo cambios. 
+Factores: 
+a) sociales (crecimiento poblacional/dinamicas sociales en la epoca)
+b) biofisicos (
+c) conservacion (aumento de AP)
+ 
 2.2.3. Step 3: Obtain data layers for the explanatory variables
 
 When modelling changes in land cover, analysts are commonly restricted to the variables that predispose areas
