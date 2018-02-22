@@ -1,0 +1,213 @@
+2.2.1. Step 1: Obtain land cover datasets 
+
+Two land cover datasets were used in the analysis: the most recent land cover dataset that has been obtained
+for Chile and a historical dataset of land cover. The most recent land cover dataset is the National Mapping
+of Native Vegetation Resources (Conaf-Conama-Birf,1997). This dataset consists of thematic land cover maps
+derived from the interpretation of aerial photographs from 1995 and 1996. The dataset was produced at a scale
+of 1:50000 with a minimum mapped unit of 6.25 ha. An intensive programme of field survey by project staff supported 
+the aerial photograph interpretation. Approximately 61% of native forest was described in the field.
+The historical land cover dataset was produced at a scale of 1:500000, and provides an evaluation of vegetation 
+cover prior to European settlement (Lara et al., in litt). The dataset was prepared by means of interdisciplinary 
+research by forest engineers, anthropologists, historians,  and  geographic  information  systems  (GIS) technicians #
+using the current land cover dataset, historical forest cover maps and documents, and extrapolations based on 
+elevation and topography.
+
+Se usaron dos conjuntos de datos de cobertura terrestre en el análisis: el conjunto de datos de cobertura
+terrestre más reciente que se ha obtenido para Chile y un conjunto de datos históricos de cobertura de la tierra.
+El conjunto de datos de cobertura terrestre más reciente es el Mapeo Nacional de los recursos de vegetación nativa 
+(Conaf-Conama-Birf, 1997). Este conjunto de datos consiste en mapas de cobertura terrestre temáticos
+derivado de la interpretación de fotografías aéreas de 1995 y 1996. El conjunto de datos fue producido a escala
+de 1: 50000 con una unidad asignada mínima de 6.25 ha. Un programa intensivo de encuesta de campo por el personal del proyecto apoyado
+la interpretación de la fotografía aérea. Aproximadamente el 61% del bosque nativo se describió en el campo.
+El conjunto de datos históricos de la cobertura del suelo se produjo a una escala de 1: 500000, y proporciona una evaluación de la vegetación
+cubrir antes del asentamiento europeo (Lara et al., in litt). El conjunto de datos fue preparado por medio de interdisciplinarios
+investigación de ingenieros forestales, antropólogos, historiadores y técnicos de sistemas de información geográfica (GIS) #
+utilizando el conjunto de datos actuales de cobertura terrestre, mapas y documentos de cobertura forestal histórica, y extrapolaciones basadas en
+elevación y topografía.
+
+
+2.2.2. Analyse the conversion of native forest 
+
+The historical and current extent of native forest was determined. The extent and spatial distribution of the
+conversion of native forest to plantations was then assessed. This analysis was undertaken using the map query
+function in ArcView 3.1 GIS software (ESRI,Redlands, CA, USA) on a gridded version (200-m cell size) of the
+land cover datasets. Determining the previous spatial distribution of a threatening process and using this in 
+an assessment of future vulnerability assumes that past patterns of the threatening process are indicative of 
+future patterns. To reduce the possibility of violating this assumption, the datasets chosen for assessing
+changes in land cover should span a period that accounts for the contemporary factors believed to be driving 
+the changes. Conversion of native forest to plantations commenced in the study region in about 1974 with the 
+introduction of subsidies for plantations and other incentives to private forestry (Ministerio de Agricultura,
+1974, 1979; Lara,1992). Therefore, while land cover changes over a long period have been analysed, the conversion 
+of native forest to plantations has occurred only in the recent past. We have therefore, assumed that factors 
+contributing to this type of land cover change still operate and predispose extant areas of native forest to
+conversion to plantations. We have also assumed that plantations were converted from native forest and not 
+from agricultural areas. Violating this assumption is likely to over-estimate the impact of native forest 
+conversion to plantations. Intermediate datasets of land cover, if such datasets become available, could be
+used to verify this assumption. 
+
+2.2.3. Step 3: Obtain data layers for the explanatory variables
+
+When modelling changes in land cover, analysts are commonly restricted to the variables that predispose areas
+to proximate threats, rather than the ultimate driving forces, such as national and international policies
+and market forces. This is because these variables directly affect changes in land cover, their effect is 
+quantifiable, and they are mappable. For example, many have proposed that the propensity of a forested area 
+to being cleared is a function of both the biophysical characteristics of the area (such as soil quality and 
+topography) and human-related factors such as ease of access (Sader and Joyce, 1988;Grainger, 1993;Pfaff, 1999;
+Liu et al., 1993;Chromitz and Gray, 1996;Reed et al., 1996;Hayes et al., 2002). Data layers for the following 
+environmental variables were available for this analysis: soil type, various climatic variables, slope, altitude, 
+latitude, and longitude (both measured at 0.5° intervals). Latitude was included due to its effect on temperature,
+precipitation and day length (Alaback, 1991 ;Arroyo et al., 1996a). Grid layers depicting the proximity of each 
+200-m grid cell to towns, roads, and timber mills were also generated using standard analysis procedures in ArcView. 
+Soil type, slope, and altitude were available as categorical variables and the remainder as continuous variables. 
+The soil type and climate variables were acquired at a scale of 1:250000 (Schlatter et al., 1995), and the other
+variables were acquired at a scale of 1:50000 (Conaf-Conama-Birf, 1997). These datasets are the most comprehensive
+presently available for the study region. Correlation matrix analysis (Sokal and Rohlf, 1981) and iterative variance
+inflation factor analysis (Glantz and Slinker, 1990;Booth et al., 1994) were used to identify correlated explanatory 
+variables. A subset of uncorrelated  variables  were  sought,  because  correlation among variables reduces the
+precision with which model coefficients and their significance can be estimated (Farrar and Glauber, 1967;Fox, 1984).
+
+2.2.4. Step 4: Choose model calibration and validation datasets
+
+Calibration and validation of the classification tree model and the logistic regression model (described in
+Step 5) were performed across a random subset of observations spanning the geographical and environmental space
+of the study region. Each observation is a 200-m grid cell containing either native forest or plantations. 
+218238 observations were allocated to the calibration dataset and 204704 observations were allocated to the
+validation dataset. This sampling design is based on the assumption that plantation establishment has had
+sufficient time to occur in all available environments in the study region. The model calibration data were 
+independent of the validation data, to reduce the likelihood of overestimating the predictive ability of the model
+(Chatfield, 1995;Harrell, 2001). 
+
+2.2.5. Step 5: Determine the relationship between native forest conversion and the explanatory variables
+
+The response variable (the presence or absence of native forest conversion to plantations) used for calibrating
+the model was derived from the analysis of nativeforest conversion (from Step 2). This information was
+extracted from the centroid of each 200-m grid cell using ArcInfo GIS software (ESRI, Redlands, CA, USA).
+Each 200-m grid cell was coded based on the presence or absence of native forest conversion to plantations.
+Cells under native forest cover were coded as absent and cells under plantation cover were coded as present.
+
+For each 200-m grid cell, information was extracted on each of the uncorrelated explanatory variables (from Step 3).
+The extracted information was exported into S-PLUS 2000 statistical software (MATHSOFT, 1998–1999) for further analysis.
+A classification tree (Brieman et al., 1984) is a useful exploratory tool to identify important explanatory variables.
+Classification trees subdivide the space spanned by the explanatory variables into regions for which the values 
+of the response variable are approximately equal. Classification trees are non-parametric and can handle continuous
+and categorical data. A classification tree was generated using binary recursive partitioning and the freeware software
+package Recursive Partitioning and Regression Trees (RPART) for S-PLUS (Atkinson and Therneau, 2000). To generate
+the classification tree, the model calibration data were first successively partitioned into homogenous subsets,
+defined by a rule based on a single explanatory variable and through use of the Ginisplitting criterion. The way 
+that explanatory variables are used to partition data depends on their type. For categorical variables with greater
+than two levels, any combination of levels can be used to form a partition and for k levels there are 2 k  1  1
+possible partitions. For continuous explanatory variables, a partition is defined as less than or greater than some 
+chosen value. Variables that operate at large scales often generate partitions early in a classification tree 
+(Moore et al., 1991).The ratio of absence observations to presence observations was unbalanced (ratio of 9:1), 
+therefore, the loss function in RPART was used to weight the presence observations more heavily to reduce the 
+chance of false-negative errors. A cost of 15 for presences and a cost of one for absences were applied. The tree
+was pruned to avoid over-fitting the data with too many partitions and terminal nodes. The pruning procedure 
+employed a minimal cost complexity measure to reduce the complexity, or the size of the tree to a specified level
+(a cost complexity of 0.004 was used). Tenfold cross validation was used to estimate the cross-validated prediction
+error rate of each possible tree to assist in obtaining the best tree in terms of predictive performance 
+(De Ath and Fabricius, 2000). Therefore, the complexity of the tree was reduced while minimising an increase in 
+prediction error. Finally, the chosen classification tree was represented graphically as a tree diagram  or 
+dendrogram,  which  illustrates  the  splits (branches) partitioning the tree into nodes (leaves). In the terminal 
+nodes, the response variable is as homogenous as possible. A multivariate, spatially explicit model of the conversion 
+of native forest to plantations was developed using the statistical technique of logistic regression 
+(McCullagh and Nelder, 1989), following others that have used logistic regression to generate models of land 
+cover change (Ludeke et al., 1990;Schneider and Pontius,2001;Serneels and Lambin, 2001). The model was used
+to identify the variables that explain the spatial distribution of native forest conversion.The relationship 
+modelled was that between the binary response  variable  (one = conversion  has  occurred; zero = conversion
+has not occurred) and the explanatory variables. Specifically, logistic regression uses the binomial distribution
+to model the variation in a binary response, and a logit link function 
+
+(that is, log[l/(1l)], where l is the mean response) 
+
+to transform the linear predictor (the combination of explanatory variables) to a scale suitable for binomial data
+(Agresti, 1996). As described above, the ratio of absence observations to presence observations was unbalanced. 
+In logistic regression analysis, unbalanced data have been shown to generate biased probability estimates, 
+resulting in underestimated probabilities of an event (King and Zeng, 2001). This problem is accentuated if the 
+explanatory variables included in the model are not sufficiently able to discriminate presence and absence
+observations. In the present case, the ranking of probabilities, rather than the absolute probabilities (see Step7),
+is of primary interest. Thus, the issue of unbalanced datasets is likely to be less problematic. In situations
+where absolute probabilities are required, King and Zeng (2001) describe procedures to correct the underestimation
+of probabilities resulting from unbalanced datasets. An  iterative  modelling  process  was  undertaken. First, 
+the uncorrelated explanatory variables were entered into S-PLUS separately to generate a univariate logistic 
+regression model. A variable was retained if the change in deviance between the model containing the variable and 
+the null model was significant at a p-value of 0.05. Second, the significant variables were entered into S-PLUS 
+simultaneously to generate a multivariate logistic regression model. From this analysis, the best-fit statistical 
+model was identified (refer to Step 6).
+
+2.2.6. Step 6: Evaluate and validate the model 
+
+To assess the fit of the model, the deviance was converted into an estimated D2 by the following formula:
+
+D2 = (Null  Deviance–Residual  Deviance)/Null  Deviance. 
+
+The percentage deviance explained is low in logistic regression models due to the binary nature of the response
+variable (Bio et al., 1998) and should not be judged by the standards of a ‘‘good fit’’ in conventional regression 
+analyses. Values between 0.2 and 0.4 represent a very good fit of a logistic regression model (Wrig-ley, 1985).
+The predictive performance of the model was assessed by using the model to predict the probability of conversion 
+of native forest to plantations and comparing the predictions with the actual distribution of plantations in the model
+validation dataset. Discrimination is a relevant measure of predictive performance when predictions are required for 
+ranking areas according to their relative vulnerability, as the discrimination ability of a model provides information 
+on the degree to which higher predicted probabilities are associated with the presence of native forest conversion.
+
+The area under the Receiver Operating Characteristic (ROC) curve was employed to assess the discrimination 
+ability of the model (Hanley and McNeil, 1982;Pontius and Schneider, 2001).
+
+2.2.7. Step 7: Predict the future location of native forest conversion 
+
+For each extant area of native forest, the probability of conversion to plantations (and the standard errors
+associated with these predictions) was determined using the logistic regression model. These predictions were
+generated using the "predict.gam" function in S-PLUS. The value of the standard errors, multiplied by a t-value
+of 1.96, was added and subtracted from the logit to generate its upper and lower values. The values of the
+expected, upper, and lower logits were back-transformed using the equation (1/1 + exp(logit)) to generate 
+the expected, upper, and lower probabilities of native forest conversion to plantations. These probabilities
+were mapped using ArcView. The output was a grid based map, with each grid cell assigned a vulnerability
+rating, that is, a value representing the probability of native forest conversion to plantations. The predicted 
+probabilities of conversion do not provide an indication of the imminence of conversion; rather they provide an
+estimate of how likely it is that conversion will occur in an area at some stage in the future.  An  exact  
+timeframe  for  the  event  is  not provided. Therefore, a relative, rather than an absolute,  vulnerability 
+is  predicted.  Further,  given  the potential for the probabilities of conversion to be underestimated because
+of the unbalanced calibration dataset, the predictions were used only as a relative index of conversion probability.
+High probabilities were seen to indicate areas of native forest highly vulnerable to conversion.
+
+A threshold probability was chosen to identify the areas of native forest highly vulnerable to conversion.
+The best-fit model, generated using the model calibration dataset, was used to obtain predicted probabilities
+of native forest conversion for the model validation dataset. To determine the appropriate threshold, a series of
+threshold probabilities (in increments of 0.05) were applied to the predicted probabilities in order to convert
+them to predicted presence and absence observations. The predicted presence and absence observations were compared
+to the actual distribution of native forest conversion, as recorded in the validation dataset. The comparison was 
+quantified using the Kappa statistic (Cohen,1960). The Kappa statistic is a measure of the proportion of agreement
+after chance agreement is removed from consideration: 
+(PoPcÞ1Pc;ð1Þ 
+
+where Po is the proportion of actual observations and predicted observations that overlap,
+and Pcis the proportion of actual observations and predicted observations that overlap due to chance (Landis and Koch,1977).
+
+The Kappa statistic ranges from a minimum of negative one to a maximum of one, with a value of one indicating 
+perfect overlap, zero indicating expected overlap due to chance and negative one indicating no overlap (Czaplewski, 1994).
+A two by two classification table was used to calculate the Kappa statistic (Table 1). This cross-tabulated the
+actual presence and absence observations with the predicted presence and absence observations.
+The Kappa statistic was calculated (after Fielding nd Bell, 1997) using the formula
+
+ðAþDÞðððAþCÞðAþBÞþðBþDÞðCþDÞÞ=NÞ½NðððAþCÞðAþBÞþðBþDÞðCþDÞÞ=NÞ½ð2Þ
+
+The Kappa statistic was adjusted for the unbalanced nature of the dataset (after Byrt et al., 1993) using the formula
+
+4AþD2N1:ð3Þ
+
+The threshold probability that maximised the value of the Kappa statistic was identified (Huntley et al.,1995;
+Guisan et al., 1998). The chosen threshold provided the best agreement between the actual observations
+and predicted observations of native forest conversion. Areas of native forest with probabilities of conversion
+above the chosen threshold probability were seen to be vulnerable to conversion. 
+
+2.2.8. Step 8: Assess the potential impact of other factors that may increase the vulnerability of native forest to conversion
+
+A highway is proposed for a section of the coastal range within the study region. The potential impact of
+this highway on the, currently largely inaccessible, native forest in the coastal range was investigated.
+Therefore, while this highway did not feature in the base model, the probabilities of conversion were 
+recalculated using a dataset that included the distance to the proposed highway as an explanatory variable.
+The route of the highway considered in this analysis is approximate, as the precise route of the highway
+is yet to be decided. The area of native forest with an increased probability of conversion due to the
+construction of the highway was obtained
+
+
+dsdddf
